@@ -14,6 +14,13 @@ const questions = [{
         type: "input",
         name: "description",
         message: "Please provide a description for your project..."
+    },
+    {
+
+        type: "list",
+        name: "license",
+        message: "What license should your project have?",
+        choices: ['MIT', 'Apache', 'None']
     }
 ];
 
