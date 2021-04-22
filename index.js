@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const generateMarkdown = require('./utils/generateMarkdown');
+const fs = require('fs');
+const util = require('util');
 
 // TODO: Create an array of questions for user input
 const questions = [{
@@ -15,14 +17,26 @@ const questions = [{
     }
 ];
 
+
+// create writeFile function using promises instead of a callback function
+const writeFileAsync = util.promisify(fs.writeFile);
+
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    writeFileAsync(fileName, data)
+}
 
 // TODO: Create a function to initialize app
 function init() {
     console.log("Running....")
+        //Ask the user the relevant questions needed for the read me
     inquirer.prompt(questions).then(responses => {
-        console.log(generateMarkdown({...responses }))
+        //Take the users responses which are in an object and pass them to generateMarkdown
+        //This returns a string which we can then use to pass to writeToFile to create the readme
+
+        let readMeString = generateMarkdown({...responses })
+        writeToFile('README.md', readMeString);
+
     })
 
 }
