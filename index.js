@@ -20,8 +20,25 @@ const questions = [{
         type: "list",
         name: "license",
         message: "What license should your project have?",
-        choices: ['MIT', 'Apache', 'None']
-    }
+        choices: ['MIT', 'Apache', 'None', 'GPL', 'BSD','EPL']
+    },
+    {
+        type: "input",
+        name: "Github",
+        message: "What is your Github username?",
+    },
+    {
+        type: "input",
+        name: "Email",
+        message: "What is your email address?",
+    },
+
+    {
+        type: "input",
+        name: "installation",
+        message: "what command did you use to install dependencies?",
+
+    },
 ];
 
 
