@@ -13,7 +13,7 @@ function renderLicenseLink(license) {
     if (license === 'None') {
         return '';
     }
-    return `*[License](##licence)`
+    return `* [License](##licence)`
 }
 
 // TODO: Create a function that returns the license section of README
@@ -22,27 +22,28 @@ function renderLicenseSection(license) {
     if (license === 'None') {
         return '';
     }
-    return `##Licence`
+    return `## Licence`
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-    return `#${data.title }
+    return `# ${data.title }
 
 ${renderLicenseBadge(data.license) }
 
-##${ data.description }
+## ${ data.description }
 
-##Table of Contents
-*[Installation](#installation)
-*[Usage](##Usage)
+## Table of Contents
+* [Installation](#installation)
+* [Usage](##Usage)
 ${renderLicenseLink(data.license)}
 
 
-##Installation
+## Installation
 
 
-##Usage
+## Usage
+
 
 ${renderLicenseSection(data.license)}
 
