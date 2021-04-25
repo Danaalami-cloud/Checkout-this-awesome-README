@@ -1,8 +1,8 @@
-# q
+# ReadMe generator
 
 ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## q
+## create a generator using node and dependencies
 
 ## Table of Contents
 * [Installation](#installation)
@@ -14,6 +14,7 @@
 
 
 ## Usage
+
 
 ## Licence
 
