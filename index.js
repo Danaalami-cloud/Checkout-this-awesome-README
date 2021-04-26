@@ -29,7 +29,7 @@ const questions = [{
     },
     {
         type: "input",
-        name: "question",
+        name: "email",
         message: "What is your email address?",
     },
 
