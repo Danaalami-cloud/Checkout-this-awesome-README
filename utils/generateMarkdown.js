@@ -53,6 +53,9 @@ ${data.installation}
 
 ## Usage
 
+## Video
+${data.video}
+
 
 ${renderLicenseSection(data.license)}
 

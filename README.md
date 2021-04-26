@@ -1,9 +1,9 @@
 # README Generator
 
-![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
+![Github license](https://img.shields.io/badge/license-BSD-blue.svg)
 
 ##Description
-For this assignment we had to generate a readme file using node and the inquierer package 
+For this assignment we had to create a readme file using node and inquierer
 
   
 ## Questions
@@ -25,6 +25,6 @@ npm i
 ## Usage
 
 
-## License
+## Licence
 
     
